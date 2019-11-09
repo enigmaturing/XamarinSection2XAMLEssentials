@@ -6,8 +6,13 @@
              mc:Ignorable="d"
              x:Class="MiApp.MainPage">
     <StackLayout VerticalOptions="Center" HorizontalOptions="Fill">
-        <Label x:Name="label" HorizontalOptions="Center" VerticalOptions="Center" Text="Hola mundo"></Label>
-        <Slider x:Name="slider" ValueChanged="slider_ValueChanged"/>
+        <Label x:Name="label" 
+               HorizontalOptions="Center" VerticalOptions="Center" 
+               Text="{Binding
+                Source={x:Reference slider}, 
+                Path=Value,
+                StringFormat='Value is {0:F2}'}"></Label>
+        <Slider x:Name="slider"/>
     </StackLayout>
 
 </ContentPage>
