@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="MiApp.MainPage">
     <StackLayout VerticalOptions="Center" HorizontalOptions="Fill">
+        <BoxView Color="Green" Opacity="{Binding Source={x:Reference slider}, Path=Value}"/>
         <Label x:Name="label" 
                HorizontalOptions="Center" VerticalOptions="Center" 
                BindingContext="{x:Reference slider}"
