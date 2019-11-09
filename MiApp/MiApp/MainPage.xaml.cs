@@ -17,5 +17,10 @@ namespace MiApp
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Bienvenido a mi App", "Hola!", "OK");
+        }
     }
 }
