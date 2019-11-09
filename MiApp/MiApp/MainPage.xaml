@@ -11,7 +11,10 @@
                Text="{Binding
                 Source={x:Reference slider}, 
                 Path=Value,
-                StringFormat='Value is {0:F2}'}"></Label>
+                StringFormat='Value is {0:F2}'}"
+               Opacity="{Binding
+                Source={x:Reference slider},
+                Path=Value}"></Label>
         <Slider x:Name="slider"/>
     </StackLayout>
 
