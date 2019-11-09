@@ -5,7 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MiApp.MainPage">
-
-    <Button HorizontalOptions="Center" VerticalOptions="Center" Text="Clickéame" Clicked="Button_Clicked"></Button>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Fill">
+        <Label x:Name="label" HorizontalOptions="Center" VerticalOptions="Center" Text="Hola mundo"></Label>
+        <Slider x:Name="slider" ValueChanged="slider_ValueChanged"/>
+    </StackLayout>
 
 </ContentPage>
