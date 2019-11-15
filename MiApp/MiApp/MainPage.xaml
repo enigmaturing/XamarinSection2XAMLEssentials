@@ -5,8 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MiApp.MainPage">
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Fill" BindingContext="{x:Reference slider}">
-        <BoxView Color="Green" Opacity="{Binding Value}"/>
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,20"
+                    Android="0,50,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout HorizontalOptions="Fill" BindingContext="{x:Reference slider}">
+        <BoxView Color="Blue" Opacity="{Binding Value}"/>
         <Label x:Name="label" 
                HorizontalOptions="Center" VerticalOptions="Center" 
                Text="{Binding Value,
