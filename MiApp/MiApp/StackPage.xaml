@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="MiApp.StackPage"
              Padding="0,20,0,0">
-    <StackLayout BackgroundColor="Yellow"
+    <!--<StackLayout BackgroundColor="Yellow"
                  VerticalOptions="Center"
                  HorizontalOptions="Center"
                  Spacing="20"
@@ -18,5 +18,5 @@
         <Label Text="Label 1" BackgroundColor="Silver"></Label>
         <Label Text="Label 2" BackgroundColor="Silver"></Label>
         <Label Text="Label 3" BackgroundColor="Silver"></Label>
-    </StackLayout>
+    </StackLayout>-->
 </ContentPage>
