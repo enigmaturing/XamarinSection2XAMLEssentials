@@ -11,7 +11,8 @@ namespace MiApp
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new QuotesPage();
+            //MainPage = new QuotesPage();
+            MainPage = new StackPage();
         }
 
         protected override void OnStart()
