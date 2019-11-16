@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiApp.Ejercicio2_Video24_Stacklayout"
+             BackgroundColor="White">
+    <StackLayout>
+        <Label Text="nyc_photographer"
+               TextColor="Black"
+               FontSize="18"
+               Margin="20,20,20,20"></Label>
+        <Image Source="https://lorempixel.com/1920/1080/nature/3/"></Image>
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="likeButton"
+                    BackgroundColor="White"
+                    TextColor="#1dabf0"
+                    Text="Like"
+                    Clicked="likeButton_Clicked"></Button>
+            <Button x:Name="likeComment"
+                    BackgroundColor="White"
+                    TextColor="#1dabf0"
+                    Text="Comment"
+                    Clicked="likeComment_Clicked"></Button>
+            <Button x:Name="shareButton"
+                    BackgroundColor="White"
+                    TextColor="#1dabf0"
+                    Text="Share"
+                    Clicked="shareButton_Clicked"></Button>
+        </StackLayout>
+        <BoxView Color="#f0f0f0" HeightRequest="1" Margin="10,0,10,0"></BoxView>
+        <StackLayout x:Name="likeText" IsVisible="True" Margin="10,0,10,0">
+            <Label FontAttributes="Bold"
+                   Text="700 likes"
+                   TextColor="Black"></Label>
+            <Label Text="This is a shot yesterday in Skanor, Sweden, when driving home, from a couple of days of work in Denmark."
+                   TextColor="Black"></Label>
+        </StackLayout>
+        <StackLayout x:Name="commentsText" IsVisible="False" Margin="10,0,10,0">
+            <Label FontAttributes="Bold"
+                   Text="Javier González"
+                   TextColor="Black"></Label>
+            <Label Text="Hey! That looks awsome!"
+                   TextColor="Black"></Label>
+        </StackLayout>
+        <StackLayout x:Name="shareText" IsVisible="False" Margin="10,0,10,0">
+            <Label FontAttributes="Bold"
+                   Text="Share this"
+                   TextColor="Black"></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="https://place-hold.it/100" Margin="0,0,10,0"></Image>
+                <Image Source="https://place-hold.it/100" Margin="0,0,10,0"></Image>
+                <Image Source="https://place-hold.it/100"></Image>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

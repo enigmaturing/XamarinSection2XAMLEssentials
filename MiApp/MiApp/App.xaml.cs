@@ -12,7 +12,8 @@ namespace MiApp
 
             //MainPage = new MainPage();
             //MainPage = new QuotesPage();
-            MainPage = new StackPage();
+            //MainPage = new StackPage();
+            MainPage = new Ejercicio2_Video24_Stacklayout();
         }
 
         protected override void OnStart()
