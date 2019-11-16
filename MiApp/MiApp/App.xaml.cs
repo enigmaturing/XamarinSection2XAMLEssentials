@@ -13,7 +13,8 @@ namespace MiApp
             //MainPage = new MainPage();
             //MainPage = new QuotesPage();
             //MainPage = new StackPage();
-            MainPage = new Ejercicio2_Video24_Stacklayout();
+            //MainPage = new Ejercicio2_Video24_Stacklayout();
+            MainPage = new GridPage();
         }
 
         protected override void OnStart()

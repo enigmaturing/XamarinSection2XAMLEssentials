@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiApp.GridPage"
+             BackgroundColor="Yellow">
+    <Grid RowSpacing="40"
+          ColumnSpacing="40">
+        <!--Fijamos el alto de cada fila con Grid.RowDefinitions-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="Label 1" BackgroundColor="Silver"></Label>
+        <Label Grid.Row="0" Grid.Column="1" Text="Label 2" BackgroundColor="Silver"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Text="Label 3" BackgroundColor="Silver"></Label>
+        <Label Grid.Row="1" Grid.Column="1" Text="Label 4" BackgroundColor="Silver"></Label>
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Label 5" BackgroundColor="Silver"></Label>
+    </Grid>
+</ContentPage>
