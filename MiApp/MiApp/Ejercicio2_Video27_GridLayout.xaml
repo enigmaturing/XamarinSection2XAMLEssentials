@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiApp.Ejercicio2_Video27_GridLayout"
+             BackgroundColor="#127ac7">
+    <Grid Padding="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0" Grid.Row="0"
+                     VerticalOptions="Center">
+            <Label Text="Welcome to Xamarin"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"></Label>
+            <Label Text="Cross-platform apps made easy"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   TextColor="White"></Label>
+        </StackLayout>
+        <Button Grid.Row="1"
+                BackgroundColor="#1dabf0"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                Text="Login"></Button>
+        <Button Grid.Row="2"
+                HorizontalOptions="Fill"
+                BackgroundColor="#1dabf0"
+                TextColor="White"
+                Text="Register"></Button>
+    </Grid>
+</ContentPage>
