@@ -17,7 +17,8 @@ namespace MiApp
             //MainPage = new GridPage();
             //MainPage = new Ejercicio1_Video27_GridLayout();
             //MainPage = new Ejercicio1_Video27_GridLayout();
-            MainPage = new Ejercicio2_Video27_GridLayout();
+            //MainPage = new Ejercicio2_Video27_GridLayout();
+            MainPage = new AbsoluteLayoutPage();
         }
 
         protected override void OnStart()

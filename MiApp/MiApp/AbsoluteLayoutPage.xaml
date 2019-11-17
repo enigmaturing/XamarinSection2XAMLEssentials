@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MiApp.AbsoluteLayoutPage"
+             Padding="0,20,0,0">
+    <AbsoluteLayout BackgroundColor="Yellow">
+        <BoxView Color="Aqua"
+                 AbsoluteLayout.LayoutBounds="0,0,100,100"/>
+        <!-- X, Y, WIDHT, HEIGHT -->
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0.5,0.5,0.25,0.25" AbsoluteLayout.LayoutFlags="All"/><!-- Se posiciona tomando como punto de referencia el centro de la forma, es decir, 0.,0.5 hacen que el BoxView esté con su centro en el centro de la pantalla -->
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0.25,0.5,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Button Text="Get Started" TextColor="White" BackgroundColor="Silver"
+                AbsoluteLayout.LayoutBounds="0,1,1,50" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"></Button>
+        <!-- INCREIBLE: Cuando queremos pasar dos valores a algún atributo, separados por coma, tal y como se indica en Video 28 "Absolute Layout in XAML" (6:40), las nuevas versiones del compilador 
+             marcan un fallo. Para evitarlo, escribir este atributo con sus dos valores separados por coma en el notepad y luego copiar y pegarlo en Visual Studio. Así compilará el programa!!!-->
+    </AbsoluteLayout>
+</ContentPage>
