@@ -17,7 +17,8 @@ namespace MiApp
             InitializeComponent();
             // El String que le hemos de pasar al método FromSource tiene la siguiente forma:
             //NombredelAssembly.NombreDeLaCarpetaDondeEstaLaImagen.NombreDeLaImagen
-            image.Source = ImageSource.FromResource("MiApp.Images.background.jpg");
+            
+            //image.Source = ImageSource.FromResource("MiApp.Images.background.jpg");
         }
     }
 }

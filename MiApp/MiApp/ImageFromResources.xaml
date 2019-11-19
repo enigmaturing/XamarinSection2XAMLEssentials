@@ -4,6 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MiApp.ImageFromResources">
-    <Image x:Name="image" Aspect="AspectFill"></Image>
+             x:Class="MiApp.ImageFromResources"
+             xmlns:local="clr-namespace:MiApp.MarkupExtensions">
+    <!--<Image x:Name="image" Aspect="AspectFill"></Image>-->
+    <Image Source="{local:EmbeddedImage ResourceId=MiApp.Images.background.jpg}" Aspect="AspectFill"></Image>
 </ContentPage>
