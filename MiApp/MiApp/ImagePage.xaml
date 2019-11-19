@@ -4,11 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MiApp.ImagePage">
+             x:Class="MiApp.ImagePage"
+             BackgroundColor="Black">
+
+    <AbsoluteLayout>
+        <ActivityIndicator AbsoluteLayout.LayoutBounds="0.5,0.5,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"
+                           IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+                           Color="White"></ActivityIndicator>
+        <!--1a Forma de asociar una imagen de internet a un tag Image: Se puede dar una uri directamente en XAML-->
+        <!--<Image Source="https://lorempixel.com/1920/1080/sports/7/"/>-->
+
+        <!--2a Forma de asociar una imagen de internet a un tag Image: Se puede dar una uri a través de C# (ver código)-->
+        <Image Source="https://lorempixel.com/1920/1080/sports/7/" x:Name="image" Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
     
-    <!--1a Forma de asociar una imagen de internet a un tag Image: Se puede dar una uri directamente en XAML--> 
-    <!--<Image Source="https://lorempixel.com/1920/1080/sports/7/"/>-->
-    
-    <!--2a Forma de asociar una imagen de internet a un tag Image: Se puede dar una uri a través de C# (ver código)-->
-    <Image Source="https://lorempixel.com/1920/1080/sports/7/" x:Name="image" Aspect="AspectFill"/>
 </ContentPage>
