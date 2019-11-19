@@ -20,6 +20,7 @@ namespace MiApp
             var imageSource = new UriImageSource { Uri = new Uri("https://lorempixel.com/1920/1080/sports/7/") };
             imageSource.CachingEnabled = false;  // no guardar las imágenes descargadas en la caché del teléfono
             // imageSource.CacheValidity = TimeSpan.FromHours(1);  // borrar la imagen descargada de la caché después de una hora
+            // image.Aspect = Aspect.Fill;
             image.Source = imageSource;
         }
     }

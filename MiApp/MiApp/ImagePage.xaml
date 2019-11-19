@@ -10,5 +10,5 @@
     <!--<Image Source="https://lorempixel.com/1920/1080/sports/7/"/>-->
     
     <!--2a Forma de asociar una imagen de internet a un tag Image: Se puede dar una uri a través de C# (ver código)-->
-    <Image Source="https://lorempixel.com/1920/1080/sports/7/" x:Name="image"/>
+    <Image Source="https://lorempixel.com/1920/1080/sports/7/" x:Name="image" Aspect="AspectFill"/>
 </ContentPage>
